@@ -1,20 +1,18 @@
 //1) Import the react libraries
 import React from 'react'
-import creatRoot from 'react-dom'
-
+import {createRoot} from 'react-dom/client';
+import App from './App';
 //2)Get the root element from the html
 
 const el = document.getElementById('root');
 
 //3) Tell the react to take control of the element
 
-const root = creatRoot(el);
+const root = createRoot(el);
 
 //4) Create a component
 
-function App(){
-    return <h1>Hi There !</h1>
-}
+
 
 //5) Show the component on the screen
 
